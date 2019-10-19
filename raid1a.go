@@ -3,14 +3,7 @@ package student
 import "github.com/01-edu/z01"
 
 func Raid1a(x, y int) {
-	if x <= 0 && y > 0 {
-		for j := 0; j < y; j++ {
-			z01.PrintRune(10)
-		}
-	} else if x > 0 && y <= 0 {
-		for i := 0; i < x; i++ {
-			z01.PrintRune(10)
-		}
+	if x <= 0 || y <= 0 {
 	} else {
 		for j := 0; j < y; j++ {
 			for i := 0; i < x; i++ {
